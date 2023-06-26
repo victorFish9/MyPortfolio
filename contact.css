@@ -62,7 +62,6 @@
 /* home section style*/
 .home{
     display: flex;
-    
     background-size: cover;
     background-attachment: fixed;
     color: black;
