@@ -316,12 +316,18 @@ section{
 }
 
 @media (max-width: 500px){
+    .home .home-content .text-1{
+        font-size: 22px;
+        color: white;
+        
+    }
     .home .home-content .text-2{
         font-size: 45px;
-
+        color: white;
     }
     .home .home-content .text-3{
         font-size: 27px;
+        color: white;
         
     }
 }
