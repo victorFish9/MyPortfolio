@@ -12,3 +12,7 @@ $(document).ready(function(){
         $('.menu-btn i').toggleClass("active");
     });
 });
+
+function enlargeImage(element) {
+    element.classList.toggle('enlarged');
+  }

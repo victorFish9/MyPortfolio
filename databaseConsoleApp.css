@@ -10,6 +10,13 @@
     padding: 0 80px;
     margin: auto;
 }
+
+.enlarged {
+    width: 800px;
+    height: 800px;
+    transition: all 0.3s;
+  }
+
 /*navbar styling*/
 .navbar {
     position: fixed;
@@ -370,6 +377,11 @@ section .title::after{
     }
 }
 @media (max-width: 1205px){
+    .enlarged {
+        width: 800px;
+        height: 800px;
+        transition: all 0.3s;
+      }
     .img1{
         width: 320px;
         height: 250px;
@@ -393,7 +405,7 @@ section .title::after{
         display: inline;
         margin-right: 30px;
     }
-    .about .img4{
+    .about img{
         width: 400px;
         height: 300px;
         border-radius: 8px;

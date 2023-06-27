@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .enlarged {
+      width: 400px;
+      height: 400px;
+      transition: all 0.3s;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        transition: all 0.3s;
+    }
+  </style>
+  <script>
+    function enlargeImage(element) {
+      element.classList.toggle('enlarged');
+    }
+  </script>
+</head>
+<body>
+  <img src="photo/unity.png" alt="Image" onclick="enlargeImage(this)">
+</body>
+</html>
