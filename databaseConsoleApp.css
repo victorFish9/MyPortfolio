@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Ubuntu:wght@400;500;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-.max-width{
+
+.max-width {
     max-width: 1700px;
     padding: 0 80px;
     margin: auto;
@@ -15,7 +17,7 @@
     width: 800px;
     height: 800px;
     transition: all 0.3s;
-  }
+}
 
 /*navbar styling*/
 .navbar {
@@ -24,86 +26,95 @@
     z-index: 999;
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
-    transition:  all 0.3s ease;
+    transition: all 0.3s ease;
 }
-.navbar.sticky{
+
+.navbar.sticky {
     padding: 15px 0;
     /*могу сделать навбар прозрачным, но тогда надо будет поменять цвет текста*/
     background: lightblue;
 }
-.navbar .max-width{
+
+.navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .navbar .logo a {
     color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
+
 /*rotate navbar links to horizontal*/
-.navbar .menu li{
+.navbar .menu li {
     list-style: none;
-    display: inline-block;   
+    display: inline-block;
 }
-.navbar .menu li a{
-    color: #fff;  
+
+.navbar .menu li a {
+    color: #fff;
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
 }
+
 /*color switch in navbar*/
-.navbar .menu li a:hover{
+.navbar .menu li a:hover {
     color: black;
 }
+
 /*creating menu btn style*/
-.menu-btn{
+.menu-btn {
     color: black;
     font-size: 23px;
     cursor: pointer;
     display: none;
-    
+
 }
 
 /* home section style*/
-.home{
+.home {
     display: flex;
-    
+
     background-size: cover;
     background-attachment: fixed;
     color: black;
     min-height: 300px;
     font-family: 'Ubuntu', sans-serif;
-    
+
 
 }
 
-.home .home-content .text-1{
+.home .home-content .text-1 {
     font-size: 27px;
 }
-.home .home-content .text-2{
+
+.home .home-content .text-2 {
     font-size: 50px;
     font-weight: 600;
     margin-left: -3px;
-    
+
 }
 
-.home .home-content .text-3 span{
+.home .home-content .text-3 span {
     color: lightblue;
     font-weight: 500;
 }
 
-.home .home-content a:hover{
+.home .home-content a:hover {
     color: #fff;
     background: none;
 }
 
 /* about section styling */
-section{
-    padding: 100px 0; 
+section {
+    padding: 100px 0;
 }
-section .title{
+
+section .title {
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -112,7 +123,8 @@ section .title{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-section .title::before{
+
+section .title::before {
     position: absolute;
     bottom: 0px;
     left: 50%;
@@ -121,7 +133,8 @@ section .title::before{
     background: #111;
     transform: translateX(-50%);
 }
-section .title::after{
+
+section .title::after {
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -131,14 +144,15 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
-.about{
+
+.about {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    
+
 }
 
 
-.img1{
+.img1 {
     width: 450px;
     height: 350px;
     float: left;
@@ -146,14 +160,16 @@ section .title::after{
     border-radius: 8px;
     display: inline;
 }
-.img2{
+
+.img2 {
     width: 450px;
     height: 350px;
-    
+
     border-radius: 8px;
     display: inline;
 }
-.img3{
+
+.img3 {
     width: 450px;
     height: 350px;
     float: right;
@@ -161,19 +177,21 @@ section .title::after{
     display: inline;
     margin-right: 30px;
 }
-.img4{
+
+.img4 {
     width: 550px;
     height: 450px;
     border-radius: 8px;
     display: inline;
     margin-left: auto;
     margin-right: auto;
-    margin-left: 50px; 
+    margin-left: 50px;
     position: relative;
 }
 
-/*style for title about*/       /*TODO!!!*/
-.about .title{
+/*style for title about*/
+/*TODO!!!*/
+.about .title {
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -182,9 +200,11 @@ section .title::after{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-/*line up to about*/            /*TODO!!!*/
-.about .title::before{
-    
+
+/*line up to about*/
+/*TODO!!!*/
+.about .title::before {
+
     position: absolute;
     bottom: 0px;
     left: 50%;
@@ -194,37 +214,45 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-.about .about-content, .contact-content{
+.about .about-content,
+.contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    
+
 
 }
-.about .about-content .left{
+
+.about .about-content .left {
     width: 45%;
 }
-/*style for second image*/      /*TODO!!!*/
-.about .about-content .left img{
+
+/*style for second image*/
+/*TODO!!!*/
+.about .about-content .left img {
     height: 400px;
     width: 400px;
     /*object-fit: cover;
     add it for image better image fit*/
     border-radius: 6px;
-    
+
 }
-.about .about-content .right{
+
+.about .about-content .right {
     width: 55%;
 }
-.about .about-content .right .text{
+
+.about .about-content .right .text {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
+
 .about .about-content .right p {
     text-align: justify;
 }
+
 .about .about-content .right a {
     display: inline-block;
     background: lightblue;
@@ -237,60 +265,71 @@ section .title::after{
     border: 2px solid lightblue;
     transition: all 0.3s ease;
 }
-.about .about-content .right a:hover{
+
+.about .about-content .right a:hover {
     color: lightblue;
     background: none;
 }
 
 /*Skills section styling*/
-.skills{
+.skills {
     font-family: 'Poppins', sans-serif;
-    
+
 }
-.skills, .skills-content{
+
+.skills,
+.skills-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-.low{
+
+.low {
     padding: 3%;
     text-align: justify;
 }
-.skills .skills-content .column{
+
+.skills .skills-content .column {
     width: calc(50% - 30px);
 }
-.skills .skills-content .left .text{
+
+.skills .skills-content .left .text {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-.skills .skills-content .left p{
+
+.skills .skills-content .left p {
     text-align: justify;
 }
 
-.skills .skills-content .right .bars{
+.skills .skills-content .right .bars {
     margin-bottom: 15px;
 
 }
-.skills .skills-content .right .info{
+
+.skills .skills-content .right .info {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 5px;
 }
-.skills .skills-content .right span{
+
+.skills .skills-content .right span {
     font-weight: 500;
     font-size: 18px;
 
 }
-.skills .skills-content .right .line{
+
+.skills .skills-content .right .line {
     height: 5px;
     width: 100%;
     background: lightslategray;
     position: relative;
 }
-.skills .skills-content .right .line::before{
+
+.skills .skills-content .right .line::before {
     content: "";
     position: absolute;
     height: 100%;
@@ -298,36 +337,47 @@ section .title::after{
     top: 0;
     background: lightblue;
 }
-.skills-content .right .html::before{
+
+.skills-content .right .html::before {
     width: 25%;
 }
-.skills-content .right .css::before{
+
+.skills-content .right .css::before {
     width: 20%;
 }
-.skills-content .right .Python::before{
-    width: 30%;
-}
-.skills-content .right .CSH::before{
-    width: 25%;
-}
-.skills-content .right .sql::before{
+
+.skills-content .right .Python::before {
     width: 30%;
 }
 
+.skills-content .right .CSH::before {
+    width: 25%;
+}
+
+.skills-content .right .sql::before {
+    width: 30%;
+}
+
+iframe {
+    height: 455px;
+    width: 750px;
+}
 
 
 /*responsive media query start*/
-@media (max-width: 2000px){
-    .home .max-width{
+@media (max-width: 2000px) {
+    .home .max-width {
         text-align: center;
-        
+
     }
-    .img4{
+
+    .img4 {
         margin: 8px;
     }
 }
-@media (max-width: 1440px){
-    .img1{
+
+@media (max-width: 1440px) {
+    .img1 {
         width: 410px;
         height: 310px;
         float: left;
@@ -335,14 +385,16 @@ section .title::after{
         border-radius: 8px;
         display: inline;
     }
-    .img2{
+
+    .img2 {
         width: 410px;
         height: 310px;
-        
+
         border-radius: 8px;
         display: inline;
     }
-    .img3{
+
+    .img3 {
         width: 410px;
         height: 310px;
         float: right;
@@ -351,8 +403,9 @@ section .title::after{
         margin-right: 30px;
     }
 }
-@media (max-width: 1325px){
-    .img1{
+
+@media (max-width: 1325px) {
+    .img1 {
         width: 380px;
         height: 280px;
         float: left;
@@ -360,14 +413,16 @@ section .title::after{
         border-radius: 8px;
         display: inline;
     }
-    .img2{
+
+    .img2 {
         width: 380px;
         height: 280px;
-        
+
         border-radius: 8px;
         display: inline;
     }
-    .img3{
+
+    .img3 {
         width: 380px;
         height: 280px;
         float: right;
@@ -376,13 +431,15 @@ section .title::after{
         margin-right: 30px;
     }
 }
-@media (max-width: 1205px){
+
+@media (max-width: 1205px) {
     .enlarged {
         width: 800px;
         height: 800px;
         transition: all 0.3s;
-      }
-    .img1{
+    }
+
+    .img1 {
         width: 320px;
         height: 250px;
         float: left;
@@ -390,14 +447,16 @@ section .title::after{
         border-radius: 8px;
         display: inline;
     }
-    .img2{
+
+    .img2 {
         width: 320px;
-        height: 250px;                                                      
-        
+        height: 250px;
+
         border-radius: 8px;
         display: inline;
     }
-    .img3{
+
+    .img3 {
         width: 320px;
         height: 250px;
         float: right;
@@ -405,41 +464,52 @@ section .title::after{
         display: inline;
         margin-right: 30px;
     }
-    .about img{
+
+    .about img {
         width: 400px;
         height: 300px;
         border-radius: 8px;
         display: inline;
         margin-left: auto;
         margin-right: auto;
-        margin-left: 50px; 
+        margin-left: 50px;
     }
-    .about .title{
+
+    .about .title {
         font-size: 35px;
+    }
+
+    iframe {
+        height: 455px;
+        width: 650px;
     }
 }
 
-@media (max-width: 1104px){
-    .about .about-content .left img{
+@media (max-width: 1104px) {
+    .about .about-content .left img {
         height: 350px;
         width: 350px;
-        
+
     }
-    .home .home-content .text-1{
+
+    .home .home-content .text-1 {
         font-size: 20px;
-        
+
     }
-    .home .home-content .text-2{
+
+    .home .home-content .text-2 {
         font-size: 40px;
 
     }
+
     /*
     
-    */                                   
-    .h3S{
+    */
+    .h3S {
         font-size: 20px;
     }
-    .img1{
+
+    .img1 {
         width: 300px;
         height: 250px;
         float: left;
@@ -447,21 +517,24 @@ section .title::after{
         border-radius: 8px;
         display: inline;
     }
-    .img2{
+
+    .img2 {
         width: 300px;
         height: 250px;
-        
+
         border-radius: 8px;
         display: inline;
     }
-    .img3{
+
+    .img3 {
         width: 300px;
         height: 250px;
         float: right;
         border-radius: 8px;
         display: inline;
     }
-    .img4{
+
+    .img4 {
         width: 450px;
         height: 350px;
         border-radius: 8px;
@@ -498,22 +571,26 @@ section .title::after{
 }
 */
 
-@media (max-width: 991px){
-    .max-width{
+@media (max-width: 991px) {
+    .max-width {
         padding: 0 50px;
     }
-    .home .home-content .text-1{
+
+    .home .home-content .text-1 {
         font-size: 20px;
-        
+
     }
-    .home .home-content .text-2{
+
+    .home .home-content .text-2 {
         font-size: 40px;
 
     }
-    .h3S{
+
+    .h3S {
         font-size: 25px;
     }
-    .img1{
+
+    .img1 {
         width: 280px;
         height: 180px;
         float: left;
@@ -521,14 +598,16 @@ section .title::after{
         border-radius: 8px;
         display: inline;
     }
-    .img2{
+
+    .img2 {
         width: 280px;
         height: 180px;
-        
+
         border-radius: 8px;
         display: inline;
     }
-    .img3{
+
+    .img3 {
         width: 280px;
         height: 180px;
         float: right;
@@ -536,7 +615,8 @@ section .title::after{
         display: inline;
         margin-right: 30px;
     }
-    .img4{
+
+    .img4 {
         width: 400px;
         height: 300px;
         border-radius: 8px;
@@ -544,41 +624,48 @@ section .title::after{
         margin-left: auto;
         margin-right: auto;
     }
-    .h3Sec{
+
+    .h3Sec {
         text-align: left;
         margin-left: 34px;
         float: left;
         display: inline;
         font-size: 15px;
-        
+
     }
-    .h3Sec2{
+
+    .h3Sec2 {
         margin-right: 20%;
         display: inline;
         font-size: 15px;
     }
-    .h3Sec3{
+
+    .h3Sec3 {
         display: inline;
         float: right;
         margin-right: 3%;
         font-size: 15px;
-    
+
     }
 }
-@media (max-width: 947px){
-    .max-width{
+
+@media (max-width: 947px) {
+    .max-width {
         padding: 0 50px;
     }
-    .menu-btn{
+
+    .menu-btn {
         display: block;
         z-index: 999;
         color: white;
-        
+
     }
-    .menu-btn i.active:before{
+
+    .menu-btn i.active:before {
         content: "X";
     }
-    .navbar .menu{
+
+    .navbar .menu {
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -589,29 +676,36 @@ section .title::after{
         padding-top: 80px;
         transition: all 02s ease;
     }
-    .navbar .menu.active{
+
+    .navbar .menu.active {
         left: 0;
     }
-    .navbar .menu li{
+
+    .navbar .menu li {
         display: block;
     }
-    .navbar .menu li a{
+
+    .navbar .menu li a {
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
     }
-    .home .home-content .text-1{
+
+    .home .home-content .text-1 {
         font-size: 19px;
 
     }
-    .home .home-content .text-2{
+
+    .home .home-content .text-2 {
         font-size: 37px;
 
     }
-    .h3S{
+
+    .h3S {
         font-size: 23px;
     }
-    .img1{
+
+    .img1 {
         width: 250px;
         height: 150px;
         float: left;
@@ -619,14 +713,16 @@ section .title::after{
         border-radius: 8px;
         display: inline;
     }
-    .img2{
+
+    .img2 {
         width: 250px;
         height: 150px;
-        
+
         border-radius: 8px;
         display: inline;
     }
-    .img3{
+
+    .img3 {
         width: 250px;
         height: 150px;
         float: right;
@@ -634,7 +730,8 @@ section .title::after{
         display: inline;
         margin-right: 30px;
     }
-    .img4{
+
+    .img4 {
         width: 380px;
         height: 330px;
         border-radius: 8px;
@@ -642,14 +739,16 @@ section .title::after{
         margin-left: auto;
         margin-right: auto;
     }
-    .skills .skills-content .column{
+
+    .skills .skills-content .column {
         width: 100%;
         margin-bottom: 35px;
     }
-    
-}  
-@media (max-width: 820px){
-    .img1{
+
+}
+
+@media (max-width: 820px) {
+    .img1 {
         width: 200px;
         height: 100px;
         float: left;
@@ -657,14 +756,16 @@ section .title::after{
         border-radius: 8px;
         display: inline;
     }
-    .img2{
+
+    .img2 {
         width: 200px;
         height: 100px;
-        
+
         border-radius: 8px;
         display: inline;
     }
-    .img3{
+
+    .img3 {
         width: 200px;
         height: 100px;
         float: right;
@@ -672,7 +773,8 @@ section .title::after{
         display: inline;
         margin-right: 30px;
     }
-    .img4{
+
+    .img4 {
         width: 310px;
         height: 260px;
         border-radius: 8px;
@@ -680,64 +782,80 @@ section .title::after{
         margin-left: auto;
         margin-right: auto;
     }
-    .h3Sec{
+
+    .h3Sec {
         text-align: left;
         margin-left: 34px;
         float: left;
         display: inline;
         font-size: 10px;
-        
+
     }
-    .h3Sec2{
+
+    .h3Sec2 {
         margin-right: 20%;
         display: inline;
         font-size: 10px;
     }
-    .h3Sec3{
+
+    .h3Sec3 {
         display: inline;
         float: right;
         margin-right: 3%;
         font-size: 10px;
-    
+
     }
-    .about .title{
+
+    .about .title {
         font-size: 30px;
     }
-    
-    
-}  
 
-@media (max-width: 690px){
-    .max-width{
+    iframe {
+        height: 355px;
+        width: 550px;
+    }
+
+
+}
+
+@media (max-width: 690px) {
+    .max-width {
         padding: 0 23px;
     }
-    .home .home-content .text-1{
+
+    .home .home-content .text-1 {
         font-size: 15px;
 
     }
-    .home .home-content .text-2{
+
+    .home .home-content .text-2 {
         font-size: 32px;
 
     }
-    .h3S{
+
+    .h3S {
         font-size: 20px;
     }
-    .max-width{
+
+    .max-width {
         max-width: 800px;
     }
-    .about .about-content .column{
+
+    .about .about-content .column {
         width: 100%;
     }
-    .about .about-content .left{
+
+    .about .about-content .left {
         display: flex;
         justify-content: center;
         margin: 0 auto 60px;
     }
+
     .about .about-content .right {
         flex: 100%;
     }
-    
-    .img1{
+
+    .img1 {
         width: 180px;
         height: 80px;
         float: left;
@@ -745,14 +863,16 @@ section .title::after{
         border-radius: 8px;
         display: inline;
     }
-    .img2{
+
+    .img2 {
         width: 180px;
         height: 80px;
-        
+
         border-radius: 8px;
         display: inline;
     }
-    .img3{
+
+    .img3 {
         width: 180px;
         height: 80px;
         float: right;
@@ -760,8 +880,8 @@ section .title::after{
         display: inline;
         margin-right: 30px;
     }
-    
-    .img4{
+
+    .img4 {
         width: 280px;
         height: 230px;
         border-radius: 8px;
@@ -769,12 +889,19 @@ section .title::after{
         margin-left: auto;
         margin-right: auto;
     }
-    .skills .skills-content .column{
+
+    .skills .skills-content .column {
         width: 100%;
     }
+
+    iframe {
+        height: 355px;
+        width: 450px;
+    }
 }
-@media (max-width: 608px){
-    .img1{
+
+@media (max-width: 608px) {
+    .img1 {
         width: 80px;
         height: 60px;
         float: left;
@@ -782,14 +909,16 @@ section .title::after{
         border-radius: 8px;
         display: inline;
     }
-    .img2{
+
+    .img2 {
         width: 80px;
         height: 60px;
-        
+
         border-radius: 8px;
         display: inline;
     }
-    .img3{
+
+    .img3 {
         width: 80px;
         height: 60px;
         float: right;
@@ -797,7 +926,8 @@ section .title::after{
         display: inline;
         margin-right: 30px;
     }
-    .about .img4{
+
+    .about .img4 {
         width: 230px;
         height: 180px;
         border-radius: 8px;
@@ -807,37 +937,41 @@ section .title::after{
     }
 }
 
-@media (max-width: 520px){
-    .home .home-content .text-1{
+@media (max-width: 520px) {
+    .home .home-content .text-1 {
         font-size: 11px;
 
     }
-    
-    .home .home-content .text-2{
+
+    .home .home-content .text-2 {
         font-size: 28px;
 
     }
-    .h3Sec{
+
+    .h3Sec {
         text-align: left;
         margin-left: 34px;
         float: left;
         display: inline;
         font-size: 10px;
-        
+
     }
-    .h3Sec2{
+
+    .h3Sec2 {
         margin-right: 20%;
         display: inline;
         font-size: 10px;
     }
-    .h3Sec3{
+
+    .h3Sec3 {
         display: inline;
         float: right;
         margin-right: 3%;
         font-size: 10px;
-    
+
     }
-    .about .img4{
+
+    .about .img4 {
         width: 200px;
         height: 150px;
         border-radius: 8px;
@@ -845,12 +979,19 @@ section .title::after{
         margin-left: auto;
         margin-right: auto;
     }
-    .about .title{
+
+    .about .title {
         font-size: 25px;
     }
-    
+
+    iframe {
+        height: 190px;
+        width: 310px;
+    }
+
 }
-.h3S{
+
+.h3S {
     position: relative;
     text-align: center;
     font-size: 35px;
@@ -859,7 +1000,8 @@ section .title::after{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-.h3S2{
+
+.h3S2 {
     position: relative;
     text-align: center;
     font-size: 35px;
@@ -868,18 +1010,21 @@ section .title::after{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-.h3Sec{
+
+.h3Sec {
     text-align: left;
     margin-left: 34px;
     float: left;
     display: inline;
-    
+
 }
-.h3Sec2{
+
+.h3Sec2 {
     margin-right: 10%;
     display: inline;
 }
-.h3Sec3{
+
+.h3Sec3 {
     display: inline;
     float: right;
     margin-right: 3%;
@@ -888,63 +1033,77 @@ section .title::after{
 
 .contact {
     font-family: 'Poppins', sans-serif;
-    
+
 }
-.contact .contact-content .column{
+
+.contact .contact-content .column {
     width: calc(50% - 30px);
 }
-.contact .contact-content .text{
+
+.contact .contact-content .text {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-    
+
 }
-.contact .contact-content .left p{
+
+.contact .contact-content .left p {
     text-align: justify;
 }
 
-.contact .contact-content .left .icons{
+.contact .contact-content .left .icons {
     margin: 10px 0;
 }
-.contact .contact-content .row{
+
+.contact .contact-content .row {
     display: flex;
     height: 65px;
     align-items: center;
 }
-.contact .contact-content .row .info{
+
+.contact .contact-content .row .info {
     margin-left: 30px;
 }
-.contact .contact-content .row i{
+
+.contact .contact-content .row i {
     font-size: 25px;
     color: lightblue;
 }
-.contact .contact-content .info .head{
+
+.contact .contact-content .info .head {
     font-weight: 500;
 }
-.contact .contact-content .info .sub-title{
+
+.contact .contact-content .info .sub-title {
     color: #333;
 }
-.contact .right form .fields{
+
+.contact .right form .fields {
     display: flex;
 }
+
 .contact .right form .field,
-.contact .right form .fields .field{
+.contact .right form .fields .field {
     height: 45px;
     width: 100%;
     margin-bottom: 15px;
 }
-.contact .right form .textarea{
+
+.contact .right form .textarea {
     height: 80px;
 
 }
-.contact .right form .name{
+
+.contact .right form .name {
     margin-right: 10px;
 }
-.contact .right form .email{
+
+.contact .right form .email {
     margin-left: 10px;
 }
+
 .contact .right form .field input,
-.contact .right form .textarea textarea{
+.contact .right form .textarea textarea {
     height: 100%;
     width: 100%;
     border: 1px solid lightgrey;
@@ -954,15 +1113,18 @@ section .title::after{
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
 }
-.contact .right form .textarea textarea{
+
+.contact .right form .textarea textarea {
     padding-top: 10px;
     resize: none;
 }
-.contact .right form .button{
+
+.contact .right form .button {
     height: 47px;
     width: 100%;
 }
-.contact .right form .button button{
+
+.contact .right form .button button {
     width: 100%;
     height: 100%;
     border: 2px solid lightblue;
@@ -975,10 +1137,9 @@ section .title::after{
     transition: all 0.3s ease;
 }
 
-.contact .right form .button button:hover{
+.contact .right form .button button:hover {
     color: lightblue;
     background: none;
 
 
 }
-
