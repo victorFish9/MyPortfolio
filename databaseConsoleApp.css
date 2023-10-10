@@ -674,7 +674,7 @@ iframe {
         background: #111;
         text-align: center;
         padding-top: 80px;
-        transition: all 02s ease;
+        transition: all 01s ease;
     }
 
     .navbar .menu.active {
